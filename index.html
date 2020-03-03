@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+       <title>Electron Sakila</title>
+       <style>
+         body{
+           background-color: burlywood;
+         }
+
+
+         #titulo-principal {
+           text-align: center;
+         }
+         input {
+           box-shadow: 2px 2px 5px black;
+           
+         }
+
+         #form-filtrar {
+           margin-top: 10px;
+           padding: 0, 20px;
+         }
+
+         #txt-busqueda {
+           width: 100%;
+           padding: 5px;
+           font-size: 18px;
+           text-align: center;
+           border: 0;
+           border-bottom: 1px solid gray;
+           margin-bottom: 15px;
+         }
+
+         #txt-busqueda:focus {
+           outline: none;
+         }
+
+         table,th,td {
+         
+          border: 1px solid black;
+          text-align: center;
+         }
+
+         table{
+          width: 300px;
+         }
+
+         .tabla-datos {
+          width: 75%;
+          text-align: left;
+          vertical-align: top;
+          border-spacing: 0;
+          margin: auto;
+         }
+
+         .top h1{
+           color: white;
+         }
+
+         .top{
+           background-color: rgb(64,0, 0);
+         }
+
+         .datos h1{
+           text-align: center;
+           color: white;
+           
+         }
+
+         .datos {
+           background-color: rgb(64,0, 0);
+         }
+
+         tr:nth-child(even) {
+           background-color: #f2f2f2;
+          }
+
+       </style>
+  </head>
+  <body>
+    <section class="top">
+      <h1 id="titulo-principal">Busqueda en sakila</h1>
+    </section>
+    
+    <section class="form-buscar">
+      <form id="form-filtrar">
+        <input type="text" placeholder="Ingrese su busqueda" id="txt-busqueda">
+      </form>
+
+    </section>
+  
+    <section class="datos">
+      <h1>Datos De Mysql</h1>
+
+    </section>
+
+   <section class="tabla-mysql">
+    <div id="tabla">
+      
+    </table>
+
+  </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
